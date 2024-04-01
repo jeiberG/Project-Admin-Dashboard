@@ -12,6 +12,10 @@
 /* Aquí definimos las Custom properties */
 :root {
   --negro: #393939;
+  --background-color-header:#111827;
+  --background-color-aside: #23232d;
+  --text-color-primary: #ffc406;
+  --background-color-main: #2c2c37;
   /* Tipografía */
   --tipo-principal: Helvetica, Arial, sans-serif;
   --tipo-secundaria: Verdana;
