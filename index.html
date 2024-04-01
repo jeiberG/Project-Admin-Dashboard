@@ -4,9 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>-Admin Dashboard</title>
+    <link rel="stylesheet" href="reset_pro.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="root">
+        <header>
+            <form role="search">
+                <button type="submit" aria-label="Buscar"><i></i></button>
+                <input type="search" placeholder="Buscar..." aria-label="Buscar">
+            </form>
+            <div class="user-info">
+                <button class="notification-button" aria-label="Notificaciones"><i></i></button>
+                <div class="user-profile-top">
+                    <img src="perfil.jpg" alt="Foto de perfil">
+                    <span>Nombre de Usuario</span>
+                </div>
+            </div>
+            <div class="user-profile-botton">
+                <img src="perfil.jpg" alt="Foto de perfil">
+                <span>Hola,<br>Nombre de Usuario</span>
+            </div>
+            <div class="user-actions">
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
+            </div>
+        </header>
+        <aside>
+            <div class="logo">
+                <img src="" alt="">
+                <h1>Dashboard</h1>
+            </div>
+            <nav class="sidebar-top">
+                <ul>
+                    <li><i></i><a href="">items 1</a></li>
+                    <li><i></i><a href="">items 2</a></li>
+                    <li><i></i><a href="">items 3</a></li>
+                    <li><i></i><a href="">items 4</a></li>
+                    <li><i></i><a href="">items 5</a></li>
+                    <li><i></i><a href="">items 6</a></li>
+                </ul>
+            </nav>
+            <nav class="sidebar-botton">
+                <ul>
+                    <li><i></i><a href="">items 1</a></li>
+                    <li><i></i><a href="">items 2</a></li>
+                    <li><i></i><a href="">items 3</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <div class="main content">
+                <section class="works">
+                    <h2>Works</h2>
+                    <div class="work-cards">
+                        <!-- Aquí van las cards de proyectos -->
+                        <div class="card">Proyecto 1</div>
+                        <div class="card">Proyecto 2</div>
+                        <div class="card">Proyecto 3</div>
+                        <div class="card">Proyecto 4</div>
+                        <div class="card">Proyecto 5</div>
+                        <div class="card">Proyecto 6</div>
+                    </div>
+                </section>
+                <section class="announcements">
+                    <h2>Announcements</h2>
+                    <div class="announcement-cards">
+                        <!-- Aquí van las cards de anuncios -->
+                        <div class="card">Anuncio 1</div>
+                        <div class="card">Anuncio 2</div>
+                        <div class="card">Anuncio 3</div>
+                    </div>
+                </section>
+                <section class="trending">
+                    <h2>Trending</h2>
+                    <div class="trending-users">
+                        <!-- Aquí van los usuarios en tendencia -->
+                        <div class="user">Usuario 1</div>
+                        <div class="user">Usuario 2</div>
+                        <div class="user">Usuario 3</div>
+                        <div class="user">Usuario 4</div>
+                    </div>
+                </section>
+            </div>
+            
+
+        </main>
+    </div>
 </body>
 </html>
