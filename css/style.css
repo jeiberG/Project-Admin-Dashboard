@@ -14,13 +14,42 @@ body{
     opacity:1;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 1fr 4fr;
 }
 header{
     background-color: var(--background-color-header);
-    margin: 2em 2em 0;
     display: grid;
     grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding:1em 1.5em;
+}
+header .user-profile-botton{
+    grid-template-columns: 1fr 11fr;
+}
+header .user-profile-botton span b{
+    font-weight: 800;
+}
+header form{
+    grid-template-columns: 1fr 10fr;
+}
+header form input{
+    background-color: #ffffff2e;
+    width: 95%;
+    height: 50%;
+    border-radius: 15px;
+    padding-left: 10px;
+}
+header form input::placeholder{
+    padding-left: 10px;
+    color: #ffffff87;
+
+}
+header .user-actions{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+header .user-info button svg,
+header form button svg {
+    width: 25px;
 }
 aside{
     grid-column: 1/1 span;
@@ -30,11 +59,42 @@ aside{
     grid-template-rows: 1fr 3fr 5fr;
     padding: 1em;
 }
+header .user-info,
+header .user-profile-botton,
+header .user-actions,
+header form,
 aside .logo,
 aside nav ul li,
 aside nav ul {
     display: grid;
     gap:10px;
+    align-items: center;
+}
+header .user-info{
+    grid-template-columns: 2fr 1fr 2fr;
+    justify-items: end;
+
+}
+header .user-profile-botton img,
+header .user-info img{
+    border-radius: 50%;
+}
+header .user-profile-botton img{
+    width: 100%;
+    justify-self: center;
+}
+header .user-info span {
+    font-weight: 900;
+}
+header .user-info img{
+    width: 60%;
+}
+header .user-actions button{
+    background-color: var(--text-color-primary);
+    color: var(--background-color-header);
+    font-weight: 600;
+    padding: .5em;
+    border-radius: 30px;
 }
 aside nav ul li {
     grid-template-columns: 1fr 5fr;
@@ -64,5 +124,5 @@ aside .logo h1 {
 }
 main{
     background-color: var(--background-color-main);
-    margin: 0 2em 2em;
+    margin: 1.5em;
 }
