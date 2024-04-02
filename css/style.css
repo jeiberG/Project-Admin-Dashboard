@@ -2,6 +2,7 @@ body{
     background-color: var(--background-color-header);
     height: 100vh;
     padding: 1em;
+    font-family: 'Rubik Regular', Arial, Helvetica, sans-serif;
 }
 .App,
 .root{
