@@ -1,5 +1,5 @@
 body{
-    background-color: var(--background-color-header);
+    background-color: var(--background-color-body);
     height: 100vh;
     padding: 1em;
     font-family: 'Rubik Regular', Arial, Helvetica, sans-serif;
@@ -10,7 +10,6 @@ body{
     width: 100%;
 }
 .App{
-    background-color: #1f293788;
     overflow-y: hidden;
     opacity:1;
     display: grid;
@@ -59,6 +58,7 @@ aside{
     display: grid;
     grid-template-rows: 1fr 3fr 5fr;
     padding: 1em;
+    max-height: 100vh;
 }
 header .user-info,
 header .user-profile-botton,
@@ -76,6 +76,7 @@ header .user-info{
     justify-items: end;
 
 }
+main .main-content section.trending div.user img,
 header .user-profile-botton img,
 header .user-info img{
     border-radius: 50%;
@@ -84,6 +85,9 @@ header .user-profile-botton img{
     width: 100%;
     justify-self: center;
 }
+.trending h2,
+.announcements h2,
+.works h2,
 header .user-info span {
     font-weight: 900;
 }
@@ -92,7 +96,7 @@ header .user-info img{
 }
 header .user-actions button{
     background-color: var(--text-color-primary);
-    color: var(--background-color-header);
+    color: var(--background-color-body);
     font-weight: 600;
     padding: .5em;
     border-radius: 30px;
@@ -102,6 +106,10 @@ aside nav ul li {
     align-items: center;
     justify-items: center;
 }
+main .main-content section div div.card div.icons svg{
+    width: 20px;
+}
+main .main-content section div div.card div.icons svg:hover,
 aside nav ul li a:hover,
 aside .logo svg ,
 aside nav ul li svg{
@@ -124,6 +132,109 @@ aside .logo h1 {
     font-weight: 600;
 }
 main{
-    background-color: var(--background-color-main);
-    margin: 1.5em;
+    padding: 1.5em;
+    overflow: auto;
+    scroll-behavior: smooth;
+    background-color: #1f293788;
+}
+main::-webkit-scrollbar{
+    width: 3px;
+}
+main::-webkit-scrollbar-thumb{
+    background-color: #8c8cae;
+}
+main .main-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: min-content 1fr;
+    grid-template-areas:
+        'work announ'
+        'work trend';
+    gap: 2em;
+}
+main .main-content section.works .work-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap:2em;
+}
+main .main-content section.works{
+    grid-area: work;
+}
+.trending-users div.user:hover,
+.announcements div.card:hover,
+main .main-content section.works .card:hover{
+    opacity: 1;
+}
+.trending-users,
+.announcement-cards,
+main .main-content section.works .card{
+    box-shadow: 1px 1px 8px 0px;
+    display: grid;
+}
+main .main-content section.works .card{
+    opacity: .7;
+}
+.trending-users,
+.announcement-cards,
+main .main-content section.works .card{
+    padding: 1em;
+    border-radius: 10px;
+}
+.trending-users div.user p,
+.announcements div.card p,
+main .main-content section.works .card p {
+    font-size: 0.9em;
+}
+.announcements div.card p {
+    font-size: 0.8em;
+}
+.trending-users div.user p strong,
+.announcements div.card p strong,
+main .main-content section.works .card p strong{
+    font-size: initial;
+}
+.trending-users div.user{
+    grid-template-columns: 1fr 6fr;
+}
+main .main-content section.works .card{
+    border-left:solid 5px var(--text-color-primary);
+}
+main .main-content section.works .card .icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+main .main-content section.announcements{
+    grid-area: announ;
+}
+main .main-content section.trending{
+    grid-area: trend;
+}
+main .main-content section h2 {
+    margin-bottom: 10px;
+}
+main .main-content section div {
+    display: grid;
+    gap:10px;
+}
+main .main-content .announcement-cards{
+    gap: 30px;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+main .main-content .announcement-cards .card:not(:last-child){
+    border-bottom: solid 3px #ffffff2e;
+}
+.work-cards div.card:nth-last-child(even){
+    background-color:#526084;
+    height: 200px;
+}
+.work-cards div.card:nth-child(2),
+.work-cards div.card:nth-child(4),
+.work-cards div.card:nth-child(6){
+    background-color: #2c2c37;
+    height: 200px;
+}
+.trending-users,
+.announcement-cards{
+    background-color:#585c6c;
 }
