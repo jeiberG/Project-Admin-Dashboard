@@ -1,7 +1,7 @@
 # Project-Admin-Dashboard
 
 ## Resumen
-Este proyecto presenta un diseño de panel de administración totalmente funcional creado con HTML y CSS. El diseño está diseñado para mostrar de manera eficiente información y características esenciales para propósitos administrativos.
+Este proyecto presenta un diseño de panel de administración creado con HTML y CSS. El diseño está diseñado para mostrar de manera eficiente información y características esenciales para propósitos administrativos.
 
 ## Panel de Administración Completado
 
